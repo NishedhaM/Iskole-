@@ -1,0 +1,109 @@
+body {font-family: Roboto, Helvetica, sans-serif,Unkempt;}
+* {box-sizing: border-box}
+
+body{
+position: fixed;
+width: 100%;
+height: 100%;
+background: #f3f3f3;
+background-blend-mode: inherit;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+}
+
+body{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-image: url("images/31.png");
+  background-color: #c5dcff5b;
+}
+
+/*title quiz*/
+h2{
+    width: 1068px;
+    height: 46px;
+    right: 349px;
+    top: 0px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 20px;
+    color: #0C1F83;
+    text-shadow: 7px 6px 4px #A7B3EF;
+    padding: auto;
+    margin-left: 34rem;
+    margin-top: 10px;
+  }
+
+  .nav-container2{
+      align-items: center;
+      font-size: 25px;
+      font-weight: bold;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      color: #8a8a8b;
+      margin-left: 400px;
+  }
+
+  .nav-container1{
+    color: rgb(160, 105, 33);
+    margin-left: 450px;
+    font-size: 18px;
+    
+  }
+
+  /*navigation bar*/
+.nav-container{
+    width: 99%;
+    height: 200px;
+    left: 0px;
+    margin-top: -30px;
+    
+    background-blend-mode: darken;
+    border-radius: 0px;
+    }
+/*back btn*/
+.btn1{
+    border: 0px solid #D2E4FF;
+    box-sizing: border-box;
+    box-shadow:   rgba(255, 255, 255, 0.46),  rgba(0, 0, 0, 0.25);
+    height: 0px;
+    width: 0px;
+    display:block;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-left:0px;
+    transition: 300ms;   
+  }
+  
+  .btn1:hover{
+    transform: translateY(-8px);
+  }
+
+  .icon-bar {
+    width: 13%;
+    background: rgba(205, 219, 255, 0.39);
+    margin-left: 1200px;
+    height: 42px;
+    padding-top: 0%;
+  }
+  
+  .icon-bar a {
+    float: left;
+    width: 30%;
+    height: 42px;
+    text-align: center;
+    padding: 1px 0;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 36px;
+  }
+  
+  .icon-bar a:hover {
+    background-color: #045aaa;
+  }
+  
+  

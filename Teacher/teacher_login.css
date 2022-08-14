@@ -1,0 +1,147 @@
+body {font-family:   sans-serif;}
+* {box-sizing: border-box}
+body{
+    font-size:sans-serif ;
+    background-color: #DEEBFF;
+    background:url('./teacher_images/33.jpg');
+    background-size: 1150px 1200px;
+    
+    ;
+}
+.wrapper{
+    position: absolute;
+    max-width: 100%;
+    margin-left: 350px;
+    margin-top: 100px;
+    width: 1200px;
+    height: 550px;
+    left: 250px;
+    top: 150px;
+    display: flex;
+    background: linear-gradient(0deg, #d2e4ff6e, #d2e4ff6b);
+    box-shadow: -20px -20px 35px rgba(255, 255, 255, 0.62), 20px 20px 69px rgba(0, 0, 0, 0.25);
+    border-radius: 39px;
+    /* align-items: center; */
+}
+.nav-container{
+    background:#E0EAF9 ;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1);
+    height: 00px;
+    }
+
+.container{
+    
+    margin-left: 350px;
+    margin-top: 10px;
+}
+
+.container .login-text {
+    width: 188px;
+    height: 56px;
+    left: 349px;
+    top: 52px;
+    text-align: center;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 56px;
+    margin-left: 60px;
+
+    color: #0C1F83;
+
+    text-shadow: 7px 6px 4px #A7B3EF;
+        
+}
+
+  .label {
+    display: inline-block;
+    width: 150px;
+    text-align: left;
+    font-size: 25px;
+    color: rgb(8, 28, 87);
+    font-style: normal;
+    font-weight: bold;
+    align-items: left;
+    margin-left: 10px;
+   
+    
+  }
+.container .login-email .input-group {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 25px;
+    
+    
+}
+
+.container .login-email .input-group input {
+    align-items: center;
+    background: rgba(57, 44, 44, 0.1);
+    box-align: center;
+   
+   
+    background: rgba(57, 44, 44, 0.1);
+    outline-color:#79d4ff;
+     width: 270px;
+     font-family: sans-serif;
+     font-style: normal;
+     font-weight: normal;
+     font-size: 20px;
+     
+     align-items: center;
+     background: rgba(57, 44, 44, 0.1);
+     box-align:center;
+    
+     
+     
+     line-height: 20px;
+     color: #87898E;
+     border: 1px solid rgba(243, 239, 239, 0);
+     transition: 250ms all ease-in;
+     box-shadow: 1px 1px 1px #FFFFFF, -3px -3px 3px rgba(199, 190, 190, 0.62);
+     border-radius:15px ;
+    
+}
+
+
+.container .login-email .input-group .btn {
+   
+    width: 25%;
+    height: 40px;
+   
+    
+    background: rgba(249, 215, 237, 0.81);
+    border: 3px solid rgba(240, 134, 203, 0.81);
+    box-shadow: 0px 4px 4px rgba(176, 33, 162, 0.25), -4px -4px 4px rgba(245, 235, 235, 0.25);
+    box-sizing: border-box;
+    color: rgba(240, 62, 169, 0.93);
+    padding: var(--padding);
+    margin-top: 0rem;
+    margin-left: 140PX;
+    border-radius:15px ;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 3px;
+    text-align: center;
+    cursor: pointer; 
+    transition: 250ms all ease-in;  
+    
+    
+}
+
+
+
+.container .login-email .input-group .btn:hover {
+    transform: translateY(-8px);
+    background: rgb(247, 159, 210);
+}
+.login-image{
+    margin-left: 480px;
+    margin-top: -390px;
+    position: relative;
+    background: url(pose_f5.png);
+    filter: drop-shadow(10px 4px 4px rgba(0, 0, 0, 0.15));
+    transform: matrix(1, 0, 0, 1, 0, 0);
+
+}

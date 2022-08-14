@@ -1,0 +1,534 @@
+:root{
+    --color-main: #1a202e;
+}
+
+*{
+    font-family:sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    margin:0;
+    padding:0;
+}
+
+body{
+    width:100%;
+    overflow-x: hidden;
+}
+
+#sidebar-toggle{
+    display:none;
+    height:100%;
+    width:calc(100%-280px);
+    z-index:30;
+    right:-100%;
+    top:0;
+    
+
+}
+
+.body-label{
+    position:fixed;
+
+}
+#sidebar-toggle:checked ~ .sidebar{
+    left: -100%;
+}
+
+#sidebar-toggle:checked ~ .main-content header{
+    left: 0;
+    width:calc(100% - 0) !important;
+}
+
+#sidebar-toggle:checked ~ .main-content{
+    margin-left: 0;
+}
+
+.sidebar{
+    width: 280px;
+    position:fixed;
+    left:0;
+    top:0;
+    height:100%;
+    padding:1rem;
+    background:#D2E4FF ;
+    padding:1 rem;
+    color: #000000;
+    transition: left 300ms;
+}
+
+.sidebar-brand{
+    height:70px;
+}
+
+.brand-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    color: black;
+}
+
+.brand-icons span{
+    font-size: 1.5rem;
+    margin-left: .5 rem;
+}
+
+.sidebar-user{
+    margin:0rem 0rem 1rem 0rem;
+    text-align: center;
+    font-size: 19px;
+}
+
+.sidebar-user img{
+   width:80px; 
+   margin:auto;
+   height:90px; 
+   border-radius: 50%;
+   border-left:3px solid transparent;
+   border-right:3px solid #000;
+   border-bottom:3px solid #000;
+   border-top:3px solid #000;
+}
+
+.sidebar-user h3{
+    font-size:1 rem;
+}
+
+.sidebar-user span{
+    font-size: .8 rem;
+}
+
+.sidebar-menu{
+    margin-top: 3rem;
+}
+
+.menu-head{
+    text-transform: uppercase;
+    color: #8da2f8;
+    font-size:8 rem;
+    font-weight:500;
+    margin-bottom:.5rem;
+}
+
+.sidebar ul{
+    margin-bottom: 1.5em;
+}
+
+.sidebar-menu li{
+    margin-bottom:.5rem;
+    margin-left: 20px;
+    display:flex;
+    height:30px;
+    align-items:center;
+    
+}
+
+.sidebar-menu li:hover{
+    background-color: #bac2f0;
+    height:30px;
+}
+
+.sidebar-menu li a {
+    color: #000000;
+    font-size: 19px;
+}
+
+.sidebar-menu li a span{
+    font-size:1.5rem;
+    display:inline-block;
+    margin-right:0.8rem;
+}
+
+
+
+
+header{
+    height:0px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background: #efefef;
+    padding:0;
+    /* position:fixed; */
+    left:280px;
+    /* width:calc(100%-280px); */
+    margin-top: 0px;
+    /* z-index: 20; */
+    background: #fff;
+    box-shadow:4px 4px 10px rgba(0,0,0,0,1);
+}
+
+#sidebar-toggle:checked ~ .sidebr{
+    left:0;
+}
+
+#sidebar-toggle:checked ~ .body-label{
+    right:0;
+}
+
+.menu-toggle{
+    margin-top: 70px;
+}
+
+.menu-toggle label{
+    height:60px;
+    width:60px;
+    font-size:1.rem;
+    display:grid;
+    border-radius: 50%;
+    place-items: center;
+    
+}
+
+.menu-toggle label:hover{
+   background: #88848f;
+  
+
+}
+
+.header-icons{
+    margin-top: 70px;
+}
+
+header-icons span{
+    display: inline-block;
+    margin-left: .7rem;
+    font-size: 1.4rem;
+    /* margin-top: 70px; */
+
+}
+
+h1{
+    margin-left: 650px;
+    background-color: none;
+    
+}
+
+/* body{
+    background-color: #f1f5f9;
+} */
+
+.main-content{
+   
+    margin-left: 280px;
+    transition:margin-left 300ms;
+    /* background: #f1f5f9; */
+   
+}
+
+main{
+    padding:1.5rem;
+    min-height:calc(100vh-70px);
+    margin-top: 60px;
+   
+
+}
+
+.page-header{
+    display:flex;
+    justify-content: space-between;
+    background: #f1f5f9;
+    height:140px;
+    margin-top: -10px;
+
+    /* align-items: center; */
+}
+
+.page-header h3{
+    margin-top: 15px;
+    margin-left: 5px;
+
+}
+
+.page-header h3 span{
+    margin-left: 650px;
+    color: #5850ec;
+}
+
+
+.hbtn {
+    position: relative;
+    box-sizing: border-box;
+    display: inline-block;
+    overflow: hidden;
+    padding: 8px 20px;
+    margin: 10px 3px 6px;
+    text-align: center;
+    border: 2px solid rgb(255, 255, 255);
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    white-space: nowrap;
+    z-index: 0;
+} 
+
+
+.hbtn i {
+    padding-right: 8px;
+} 
+
+.hbtn .hb-fill-right-rev-bg-br{
+    margin-top: 15px;
+}
+
+
+.hb-fill-right-rev-bg-br::before {
+    position: absolute;
+    content: "";
+    background: #5850ec;
+    transition-duration: 0.3s;
+    z-index: -1;
+    inset: 0px auto auto 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    border: 2px solid rgb(255, 255, 255);
+} 
+
+
+.hb-fill-right-rev-bg-br:hover::before {
+    width: 0px;
+    height: 100%;
+    opacity: 1;
+} 
+
+
+.hb-fill-right-rev-bg-br:hover {
+    background: transparent;
+    color: rgb(144, 179, 207);
+    transition: all 0.3s ease 0s;
+} 
+
+.btn-group button {
+    background-color: #ebeef3; 
+    border: 1px solid #ffffff; 
+    color: black; 
+    padding: 50px 24px; 
+    cursor: pointer; 
+    width: 300px; 
+    display: block; 
+    padding-top: 30px 0px 30px;
+    margin-top: 12%;
+    height:10%;
+    text-align: center;
+    border-radius: 20px;
+  }
+
+  .btn-group button p{
+    font-size: 20px;
+  }
+  
+  .btn-group button:not(:last-child) {
+    border-bottom: none; /* Prevent double borders */
+  }
+  
+  /* Add a background color on hover */
+  .btn-group button:hover {
+    background-color: #5850ec;
+    width:300px;
+  }
+
+  #teacherprofile{
+      border-radius: 50%;
+      width:100px;
+      height: 120px;
+      margin-top: 10px;
+      margin-left: 10px;
+     
+  }
+
+#p1{
+    font-size: 30px;
+    margin-left: 140px;
+    margin-top: -90px;
+
+}
+
+
+#p2{
+    font-size: 20px;
+    margin-left: 140px;
+    margin-top: 0px;
+}
+
+
+#p3{
+    font-size: 10px;
+    color: #5850ec;
+    margin-left: 140px;
+    margin-top: 0px;
+}
+
+.container{
+    /* background-color: #dadcf1; */
+    width:100%;
+    height: 700px;
+}
+
+.gr1{
+    float: left;
+    width:45%;
+    /* background-color: #ffffff; */
+    height:350px;
+    margin-top: 20px;
+    margin-left: 20px;
+    border:2px solid rgb(191, 193, 199);
+    padding-left: 10px;
+    /* border-width: 10px;
+    border-left-width:10px;
+    border-color: black; */
+    /* border-radius: 10px;
+    border-width: 3px;
+    border-color: rgba(0, 0, 0, 0.25); */
+    
+}
+
+.gr2{
+    float: right;
+    width:50%;
+    /* background-color: #ffffff; */
+    height:450px;
+    margin-left: 5px;
+    padding-right: 5px;
+    margin-top: 20px;
+    margin-right: 20px;
+    border:2px solid rgb(191, 193, 199);
+    padding-left: 10px;
+    
+ 
+}
+
+.gr3{
+    float: left;
+    width:45%;
+    /* background-color: #ffffff; */
+    height:275px;
+    margin-top: 20px;
+    margin-left: 20px;
+    border:2px solid rgb(191, 193, 199);
+    padding-left: 10px;
+}
+
+.gr4{
+    float: right;
+    width:50%;
+    /* background-color: #ffffff; */
+    height:175px;
+    margin-left: 5px;
+    margin-top: 20px;
+    margin-right: 20px;
+    border:2px solid rgb(191, 193, 199);
+    padding-left: 10px;
+}
+
+#userdetails{
+    margin-top: 20px;
+    margin-left: 10px;
+    font-size: 21px;
+    /* font-weight:10px; */
+}
+
+#useremailaddress{
+    margin-left: 10px;
+    font-size: 18px;
+   
+}
+
+#country1{
+    margin-left: 10px;
+    font-size: 18px;
+   
+}
+
+#city1{
+    margin-left: 10px;
+    font-size: 18px;
+    margin-top: 10px;
+   
+}
+
+#email{
+    margin-left: 10px;
+    font-size: 15px;
+    color: blue;
+}
+
+#country2{
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+#city2{
+    margin-left: 10px;
+    font-size: 15px; 
+}
+
+#coursedetails{
+    margin-top: 20px;
+    margin-left: 10px;
+    font-size: 21px;
+    /* font-weight:10px; */
+}
+
+#sin{
+    margin-left: 120px;
+    color:blue;
+}
+
+#math{
+    margin-left: 200px;
+    color: blue;
+}
+
+#psin{
+    margin-left:130px;
+}
+
+#pmath{
+    margin-left: 210px;
+}
+
+.row2{
+    margin-top: 40px;
+}
+
+#eng{
+    margin-left: 120px;
+   
+    color:blue;
+}
+
+#aes{
+    margin-left: 200px;
+    
+    color: blue;
+}
+
+#peng{
+    margin-left:130px;
+}
+
+#paes{
+    margin-left: 210px;
+}
+
+#qualifications{
+    margin-top: 20px;
+    margin-left: 10px;
+    font-size: 21px;
+    /* font-weight:10px; */
+}
+
+#loginactivities{
+    margin-top: 20px;
+    margin-left: 10px;
+    font-size: 21px;
+    /* font-weight:10px; */
+}
+
+hr{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+    
+    

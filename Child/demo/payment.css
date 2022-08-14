@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background-color: rgba(211, 230, 255, 0.3);
+  background-position: 50% 50%;
+  background-size: cover;
+}
+.payment-form-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 57%;
+  height: 64%;
+  backdrop-filter: blur(23px) saturate(200%);
+  -webkit-backdrop-filter: blur(23px) saturate(200%);
+  background-color: rgba(211, 230, 255, 0.3);
+  border-radius: 36px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+}
+.payment-form {
+  position: relative;
+  left: 14%;
+}
+.card-icon {
+  width: 329px;
+  height: 196px;
+
+  background: linear-gradient(90deg, #00c271 0%, #006289 100%);
+  backdrop-filter: blur(250 px);
+  backdrop-filter: blur(250px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 22px;
+  transform: rotate(25.35deg);
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.visa-icon {
+  width: 54px;
+  height: 17px;
+  margin-top: 16px;
+  display: block;
+  float: right;
+  margin-right: 22px;
+}
+.visa-card-number {
+  display: block;
+  margin-top: 18%;
+  margin-left: 5%;
+  font-family: AlergiaNormal;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 29px;
+  font-weight: 300;
+  color: #ffffff;
+}
+.visa-strip {
+  position: relative;
+  left: 16 px;
+  top: 49 px;
+}
+.left-info,
+.right-info {
+  display: inline-block;
+}
+.right-info {
+  text-align: right;
+}
+.card-text {
+  margin: 0;
+  font-family: AlergiaNormal;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 25px;
+  /* identical to box height */
+
+  color: #ffffff;
+}
+.small-text {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.62);
+}
+.button {
+  padding: 10px 10px;
+  border-radius: 15px;
+  border: none;
+  font-family: AlergiaNormal;
+  font-style: normal;
+  font-weight: normal;
+  color: rgb(41, 41, 41);
+  width: 44%;
+  background-color: #8bc34a;
+}
+.input {
+  padding: 10px 10px;
+  border-radius: 10px;
+  border: none;
+  margin: 5px 0;
+  font-family: Actor;
+  font-style: normal;
+  font-weight: normal;
+  color: #202020;
+}
+.full-width {
+  width: 80%;
+}
+.background-blob {
+  position: absolute;
+  opacity: 60%;
+  height: 400px;
+  top: 21%;
+  left: 36%;
+}
+.pay-text {
+  display: block;
+}
+.second-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.first-section {
+  color: aliceblue;
+  font-family: Actor;
+  font-style: normal;
+  font-weight: normal;
+  font-size: medium;
+}
+span {
+  display: inline-block;
+}
+h1{
+  width: 1068px;
+  height: 56px;
+  right: 349px;
+  top: 0px;
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 20px;
+  color: #0C1F83;
+  text-shadow: 7px 6px 4px #A7B3EF;
+  padding: auto;
+  margin-left: 13rem;
+  margin-top: 260px;
+
+  
+}
+
+
+        /*back btn*/
+        .btn1{
+          border: 0px solid #D2E4FF;
+          box-sizing: border-box;
+          box-shadow:   rgba(255, 255, 255, 0.46),  rgba(0, 0, 0, 0.25);
+          height: 0px;
+          width: 0px;
+          display:block;
+          border-radius: 50%;
+          margin-top: 20px;
+          margin-left:0px;
+          transition: 300ms;   
+        }
+        
+        .btn1:hover{
+          transform: translateY(-8px);
+        }
